@@ -32,4 +32,10 @@ public class ProductServiceImpl implements ProductService {
         return productRepo.save(product);
     }
 
+    @Override
+    @Transactional
+    public Product updateProduct(Product product) {
+        return productRepo.save(product);
+    }
+
 }
